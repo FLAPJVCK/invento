@@ -14,7 +14,7 @@ public class ConnectionMySQL {
     private static final String DB_PASSWORD = "db.password";
 
 
-    public ConnectionMySQL(){
+    public ConnectionMySQL() {
         ResourceBundle resourceBundle = ResourceBundle.getBundle(DB_FILE_NAME);
         String dbUrl = resourceBundle.getString(DB_URL);
         String dbUsername = resourceBundle.getString(DB_USERNAME);

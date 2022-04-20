@@ -30,12 +30,6 @@ public class LoginReader {
 
             for (Login login : (Iterable<Login>) csvToBean) {
                 loginLoader.load(connectionMySQL.getConnection(),login);
-                System.out.print("   " + login.getApplication());
-                System.out.print("   " + login.getAppAccountName());
-                System.out.print("   " + login.getIsActive());
-                System.out.print("   " + login.getJobTitle());
-                System.out.print("   " + login.getDepartment() + "\n");
-
             }
             reader.close();
             connectionMySQL.getConnection().close();

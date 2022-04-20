@@ -86,7 +86,7 @@ public class HelloServlet extends HttpServlet {
         Connection connection = connectionMySQL.getConnection();
         String type = request.getParameter("time");
         String query;
-        switch (type){
+        switch (type) {
             case ("day"):
                 query = FIND_ALL_POSTINGS_BY_DAY;
                 break;

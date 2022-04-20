@@ -13,7 +13,7 @@ public class View {
             System.out.println("Address after transformation: " + intToIp(ip));
         } else {
             String ip = scanner.nextLine();
-            System.out.println("Address after transformation: " +ipToInt(ip));
+            System.out.println("Address after transformation: " + ipToInt(ip));
         }
     }
 }

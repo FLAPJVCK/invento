@@ -8,27 +8,27 @@ import java.sql.Date;
 import java.util.Objects;
 
 public class Posting implements Serializable {
-    @CsvBindByName (column = "Mat. Doc.")
+    @CsvBindByName(column = "Mat. Doc.")
     private long matDoc;
-    @CsvBindByName (column = "Item")
+    @CsvBindByName(column = "Item")
     private int item;
     @CsvDate(value = "dd.mm.yyyy")
-    @CsvBindByName (column = "Doc. Date")
+    @CsvBindByName(column = "Doc. Date")
     private Date docDate;
     @CsvDate(value = "dd.mm.yyyy")
-    @CsvBindByName (column = "Pstng Date")
+    @CsvBindByName(column = "Pstng Date")
     private Date pstngDate;
-    @CsvBindByName (column = "Material Description")
+    @CsvBindByName(column = "Material Description")
     private String materialDescription;
-    @CsvBindByName (column = "Quantity")
+    @CsvBindByName(column = "Quantity")
     private int quantity;
-    @CsvBindByName (column = "BUn")
+    @CsvBindByName(column = "BUn")
     private String bUn;
-    @CsvBindByName (column = "Amount LC")
+    @CsvBindByName(column = "Amount LC")
     private String amountLC;
-    @CsvBindByName (column = "Crcy")
+    @CsvBindByName(column = "Crcy")
     private String crcy;
-    @CsvBindByName (column = "User Name")
+    @CsvBindByName(column = "User Name")
     private String userName;
     private String isAuthorized;
 

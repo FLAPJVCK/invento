@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LoginLoader implements Loader<Login>{
+public class LoginLoader implements Loader<Login> {
     private static final String FIND_APPLICATION = "SELECT id FROM application where name = ? LIMIT 1";
     private static final String FIND_DEPARTMENT = "SELECT id FROM department where name = ? LIMIT 1";
     private static final String FIND_IS_ACTIVE = "SELECT id FROM is_active where is_active = ? LIMIT 1";

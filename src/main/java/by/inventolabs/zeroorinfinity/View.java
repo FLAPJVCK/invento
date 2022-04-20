@@ -10,7 +10,7 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
-            if (n>1){
+            if (n > 1) {
                 System.out.println("un = " + zeroOrInfinity(n));
             } else {
                 System.out.println("Error");

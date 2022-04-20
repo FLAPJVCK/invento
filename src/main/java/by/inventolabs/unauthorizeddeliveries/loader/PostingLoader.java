@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class PostingLoader implements Loader<Posting>{
+public class PostingLoader implements Loader<Posting> {
     private static final String FIND_USER = "SELECT id FROM user where name = ? LIMIT 1";
     private static final String FIND_AUTHORIZED = "SELECT t.is_active, name FROM user INNER JOIN is_active as t ON user.is_active_id = t.id WHERE name = ?";
     private static final String FIND_PRODUCT = "SELECT id FROM product where material_description = ? LIMIT 1";

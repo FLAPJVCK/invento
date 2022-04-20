@@ -30,17 +30,6 @@ public class PostingReader {
 
             for (Posting posting : (Iterable<Posting>) csvToBean) {
                 postingLoader.load(connectionMySQL.getConnection(),posting);
-                System.out.print("   " + posting.getMatDoc());
-                System.out.print("   " + posting.getItem());
-                System.out.print("   " + posting.getDocDate());
-                System.out.print("   " + posting.getPstngDate());
-                System.out.print("   " + posting.getMaterialDescription());
-                System.out.print("   " + posting.getQuantity());
-                System.out.print("   " + posting.getbUn());
-                System.out.print("   " + posting.getAmountLC());
-                System.out.print("   " + posting.getCrcy());
-                System.out.print("   " + posting.getUserName() + "\n");
-
             }
             reader.close();
             connectionMySQL.getConnection().close();
