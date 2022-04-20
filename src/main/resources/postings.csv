@@ -1,8 +1,8 @@
 Mat. Doc.;	Item;	Doc. Date;	Pstng Date;	Material Description;	Quantity;	BUn;	Amount LC;	Crcy;	User Name
 
-6777727662;	2;	25.07.2020;	25.07.2020;	Headphones JBL C100SIU BLK black;	3;	pc;	38,1;	BYN;	NLIMONOV
-6777727662;	1;	25.07.2020;	25.07.2020;	Headphones JBL T110BT WHT white;	2;	pc;	75;	BYN;	NLIMONOV
-6777727662;	3;	25.07.2020;	25.07.2020;	Wireless JBL CHARGE4 BLK;	4;	pc;	921,44;	BYN;	NLIMONOV
+6777727662;	2;	25.07.2020;	25.07.2020;	Headphones JBL C100SIU BLK black;	3;	pc; 38,1;	BYN;	NLIMONOV
+6777727662;	1;	25.07.2020;	25.07.2020;	Headphones JBL T110BT WHT white;	2;	pc; 75;	BYN;	NLIMONOV
+6777727662;	3;	25.07.2020;	25.07.2020;	Wireless JBL CHARGE4 BLK;	4;	pc; 921,44;	BYN;	NLIMONOV
 6777727661;	1;	25.07.2020;	25.07.2020;	A1 Alpha 64GB green;	2;	pc;	450,08;	BYN;	NLIMONOV
 6777727661;	2;	25.07.2020;	25.07.2020;	A1 Alpha 64GB Black;	2;	pc;	450,08;	BYN;	NLIMONOV
 4977637124;	1;	21.07.2020;	21.07.2020;	USIM Trio Privet in wrapping Internet A1;	-5;	pc;	0;	BYN;	NLIMONOV
@@ -24,4 +24,4 @@ Mat. Doc.;	Item;	Doc. Date;	Pstng Date;	Material Description;	Quantity;	BUn;	Amo
 4977629374;	1;	04.08.2020;	04.08.2020;	Data cable Prime Line USB-microUSB1,2м b;	-1;	pc;	-2,3;	BYN;	PTOPHUNUVICH
 4977637178;	1;	20.08.2020;	20.08.2020;	Apple iPhone 7 32GB black;	-1;	pc;	0;	BYN;	PONOLOVPNOY_
 4977629376;	1;	04.08.2020;	04.08.2020;	Apple iPhone 7 32GB black;	-3;	pc;	0;	BYN;	PONOLOVPNOY_
-4977629373;	1;	04.08.2020;	04.08.2020;	Apple iPhone 7 32GB black;	-2;	pc;	0;	BYN;	PONOLOVPNOY_	
+4977629373;	1;	04.08.2020;	04.08.2020;	Apple iPhone 7 32GB black;	-2;	pc;	0;	BYN;	PONOLOVPNOY_

@@ -1,20 +1,36 @@
-package by.inventolabs.unauthorizeddeliveries.task._4.model;
+package by.inventolabs.unauthorizeddeliveries.model;
+
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvDate;
 
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.Objects;
 
 public class Posting implements Serializable {
+    @CsvBindByName (column = "Mat. Doc.")
     private long matDoc;
+    @CsvBindByName (column = "Item")
     private int item;
+    @CsvDate(value = "dd.mm.yyyy")
+    @CsvBindByName (column = "Doc. Date")
     private Date docDate;
+    @CsvDate(value = "dd.mm.yyyy")
+    @CsvBindByName (column = "Pstng Date")
     private Date pstngDate;
+    @CsvBindByName (column = "Material Description")
     private String materialDescription;
-    private int Quantity;
+    @CsvBindByName (column = "Quantity")
+    private int quantity;
+    @CsvBindByName (column = "BUn")
     private String bUn;
-    private double amountLC;
+    @CsvBindByName (column = "Amount LC")
+    private String amountLC;
+    @CsvBindByName (column = "Crcy")
     private String crcy;
+    @CsvBindByName (column = "User Name")
     private String userName;
+    private String isAuthorized;
 
     public long getMatDoc() {
         return matDoc;
@@ -57,11 +73,11 @@ public class Posting implements Serializable {
     }
 
     public int getQuantity() {
-        return Quantity;
+        return quantity;
     }
 
     public void setQuantity(int quantity) {
-        Quantity = quantity;
+        this.quantity = quantity;
     }
 
     public String getbUn() {
@@ -72,11 +88,11 @@ public class Posting implements Serializable {
         this.bUn = bUn;
     }
 
-    public double getAmountLC() {
+    public String getAmountLC() {
         return amountLC;
     }
 
-    public void setAmountLC(double amountLC) {
+    public void setAmountLC(String amountLC) {
         this.amountLC = amountLC;
     }
 
@@ -96,20 +112,12 @@ public class Posting implements Serializable {
         this.userName = userName;
     }
 
-    @Override
-    public String toString() {
-        return "Posting{" +
-                "matDoc=" + matDoc +
-                ", item=" + item +
-                ", docDate=" + docDate +
-                ", pstngDate=" + pstngDate +
-                ", materialDescription='" + materialDescription + '\'' +
-                ", Quantity=" + Quantity +
-                ", bUn='" + bUn + '\'' +
-                ", amountLC=" + amountLC +
-                ", crcy='" + crcy + '\'' +
-                ", userName='" + userName + '\'' +
-                '}';
+    public String getIsAuthorized() {
+        return isAuthorized;
+    }
+
+    public void setIsAuthorized(String isAuthorized) {
+        this.isAuthorized = isAuthorized;
     }
 
     @Override
@@ -117,11 +125,11 @@ public class Posting implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Posting posting = (Posting) o;
-        return matDoc == posting.matDoc && item == posting.item && Quantity == posting.Quantity && Double.compare(posting.amountLC, amountLC) == 0 && Objects.equals(docDate, posting.docDate) && Objects.equals(pstngDate, posting.pstngDate) && Objects.equals(materialDescription, posting.materialDescription) && Objects.equals(bUn, posting.bUn) && Objects.equals(crcy, posting.crcy) && Objects.equals(userName, posting.userName);
+        return matDoc == posting.matDoc && item == posting.item && quantity == posting.quantity && Objects.equals(docDate, posting.docDate) && Objects.equals(pstngDate, posting.pstngDate) && Objects.equals(materialDescription, posting.materialDescription) && Objects.equals(bUn, posting.bUn) && Objects.equals(amountLC, posting.amountLC) && Objects.equals(crcy, posting.crcy) && Objects.equals(userName, posting.userName) && Objects.equals(isAuthorized, posting.isAuthorized);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(matDoc, item, docDate, pstngDate, materialDescription, Quantity, bUn, amountLC, crcy, userName);
+        return Objects.hash(matDoc, item, docDate, pstngDate, materialDescription, quantity, bUn, amountLC, crcy, userName, isAuthorized);
     }
 }
